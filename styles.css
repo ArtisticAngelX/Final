@@ -1,0 +1,149 @@
+
+.parent {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(4, 300px);
+    gap: 12px;
+}
+    
+.div1 img, .div2 img, .div3 img, .div4 img, .div5 img, .div6 img{
+    height: 100%;
+    object-fit: cover; 
+    
+}
+.div1 img{
+    rotate: -30deg;
+}
+.div2 img{
+    margin-left: 100px;
+}
+.div2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.div3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+.div3 img{
+    rotate: 30deg;
+}
+
+.div4 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    height: 5em;
+}
+
+.div5 {
+    grid-row: span 1 / span 1;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.div6 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    text-align: center;
+}
+.div6 img{
+    width: 80%;
+}
+div .portfolio{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    top: 400px;
+    left: 300px;
+
+}
+div .credits{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    top: 700px;
+    left: 300px;
+    
+}
+div .picture{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    top: 100px;
+    left: 300px;
+    
+}
+
+div .services{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: cadetblue;
+    top: 700px;
+    left: 300px;
+
+}
+@media screen and (max-width: 1024px) {
+
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .div1, .div2, .div3,
+    .div4, .div5, .div6 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .div1 img, .div2 img, .div3 img,
+    .div4 img, .div5 img, .div6 img {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .div2 img {
+        margin-left: 0;
+    }
+    div .portfolio{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    top: 200px;
+    right:0;
+    left: auto;
+
+}
+div .credits{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    top: 300px;
+    right:0;
+    left: auto;
+    
+}
+div .picture{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    top: 100px;
+    right:0;
+    left: auto;
+    
+}
+}
+a service-link {
+  font-size: 5em; /* or use px, em, %, etc. */
+}
+
+
